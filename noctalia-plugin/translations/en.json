@@ -1,0 +1,19 @@
+{
+  "settings.glyph.label": "Icon glyph",
+  "settings.show_status_text.label": "Show status text on bar",
+  "settings.show_status_text.description": "Display status text next to the icon on horizontal bars",
+  "widget.tooltip": "iPhone Mirror",
+  "widget.state.starting": "Starting",
+  "widget.state.running": "Running",
+  "widget.state.stopping": "Stopping",
+  "widget.state.stopped": "Stopped",
+  "widget.state.disconnected": "iPhone disconnected",
+  "widget.state.error": "Error",
+  "panel.title": "iPhone Mirror",
+  "panel.desc_running": "The mirror process is running.",
+  "panel.desc_stopped": "The mirror process is not running.",
+  "panel.action.start": "Start mirror",
+  "panel.action.focus": "Open or focus mirror",
+  "panel.action.stop": "Stop mirror",
+  "panel.error_prefix": "Error"
+}

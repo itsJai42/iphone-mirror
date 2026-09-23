@@ -1,0 +1,43 @@
+id = "quantumfire/iphone-mirror"
+name = "iPhone Mirror"
+version = "0.1.0"
+plugin_api = 28
+author = "quantumfire"
+license = "MIT"
+dependencies = ["iphone-mirror"]
+tags = ["bar", "panel", "utility", "phone", "mirror"]
+icon = "device-mobile"
+description = "Open, stop, and monitor iPhone Mirror from the Noctalia bar."
+
+[[widget]]
+id = "bar"
+entry = "widget.luau"
+
+  [[widget.setting]]
+  key = "glyph"
+  type = "glyph"
+  label_key = "settings.glyph.label"
+  default = "device-mobile"
+
+  [[widget.setting]]
+  key = "show_status_text"
+  type = "bool"
+  label_key = "settings.show_status_text.label"
+  description_key = "settings.show_status_text.description"
+  default = false
+
+[[panel]]
+id = "panel"
+entry = "panel.luau"
+width = 340
+height = 260
+placement = "attached"
+position = "auto"
+open_near_click = true
+keyboard_focus = "exclusive"
+dismiss_on_outside_click = true
+capture_keys = ["escape"]
+
+[[service]]
+id = "service"
+entry = "service.luau"
